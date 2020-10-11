@@ -1,7 +1,15 @@
 syntax = "proto3";
 
-package test;
 
-service Add{
-  rpc
+service AddNum {
+    rpc addnum(AddRequest) returns (AddReply) {}
+}
+
+message AddRequest {
+    int32 a = 1;
+    int32 b = 2;
+}
+
+message AddReply {
+    string result = 1;
 }
