@@ -1,1 +1,7 @@
-syntax = "proto3"
+syntax = "proto3";
+
+package test;
+
+service Add{
+  rpc
+}
